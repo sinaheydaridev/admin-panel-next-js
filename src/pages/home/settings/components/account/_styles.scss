@@ -1,0 +1,16 @@
+.avatar-container {
+  width: 7rem;
+  height: 7rem;
+}
+
+.avatar {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.avatar-input {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}

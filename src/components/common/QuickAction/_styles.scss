@@ -1,0 +1,9 @@
+.quick-action {
+  height: 4.4rem;
+  &:hover {
+    background-color: var(--primary);
+    color: var(--light);
+    @include transition(all, 150ms);
+  }
+  @include transition(all, 150ms);
+}

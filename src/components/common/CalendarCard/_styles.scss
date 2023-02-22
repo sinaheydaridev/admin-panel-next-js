@@ -1,0 +1,58 @@
+.past-event {
+  &:hover {
+    background-color: var(--past-event-hover-bg-color);
+  }
+  @include transition(all, 150ms);
+  overflow: hidden;
+}
+
+.calendar-card {
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: none;
+  user-select: none;
+
+  .small-header {
+    background-color: var(--grey-800);
+  }
+}
+
+.calendar-card.small {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.calendar-card.big {
+  width: 6.8rem;
+  height: 6.8rem;
+  header {
+    height: 2.3rem;
+  }
+  h2 {
+    line-height: 20px;
+  }
+  @include maxWidth(sm) {
+    h2 {
+      line-height: 8px !important;
+    }
+    h2,
+    h4 {
+      font-size: 1.5rem;
+    }
+    div {
+      font-size: 0.9rem;
+    }
+    header {
+      height: 2.3rem;
+    }
+    width: 5.7rem;
+    height: 5.7rem;
+    font-size: 1rem !important;
+  }
+}
+
+.event-image {
+  height: 5rem;
+  border-radius: 20px;
+  overflow: hidden;
+}

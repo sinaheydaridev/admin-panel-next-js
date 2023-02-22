@@ -1,0 +1,12 @@
+@import "../mixins";
+@import "variables";
+
+.container {
+  @include maxWidth(lg) {
+    max-width: 992px !important;
+  }
+}
+
+.fs-6 {
+  font-size: 13px !important;
+}

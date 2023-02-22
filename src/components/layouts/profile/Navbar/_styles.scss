@@ -1,0 +1,16 @@
+.profile-navbar {
+  background-color: var(--profile-navbar-bg-color);
+  padding-right: 1rem;
+  @include minWidth(sm) {
+    padding-right: 3rem !important;
+  }
+  font-weight: 500;
+  .link {
+    &:hover {
+      background-color: var(--profile-button-hover-bg-color) !important;
+    }
+    @include transition(all, 150ms);
+  }
+  @include transition(all, 150ms);
+
+}

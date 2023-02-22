@@ -1,0 +1,258 @@
+@import "./palette";
+
+// Internal variables
+$profile-edit-button-bg-color: #094432;
+
+// =========================================================
+// =========================================================
+// =========================================================
+// DARK PROPERTIES
+// =========================================================
+// =========================================================
+// =========================================================
+
+$dark-mode-add-block-element: $grey-1000;
+
+// ========================> Pink property <========================
+$dark-pink-mode-profile-navbar-bg-color: $secondary-light;
+$dark-pink-mode-profile-header-bg-color: $primary-darker;
+$dark-pink-mode-profile-content-bg-color: $primary;
+$dark-pink-mode-profile-edit-button-bg-color: $primary-dark;
+$dark-pink-mode-profile-button-hover-bg-color: $primary;
+$dark-pink-mode-profile-edit-button-opacity: 1;
+$dark-pink-mode-profile-create-post-text-color: $primary;
+
+// ========================> Success property <========================
+$dark-success-mode-profile-navbar-bg-color: $success-light;
+$dark-success-mode-profile-header-bg-color: $success-darker;
+$dark-success-mode-profile-content-bg-color: $success;
+$dark-success-mode-profile-edit-button-bg-color: $profile-edit-button-bg-color;
+$dark-success-mode-profile-button-hover-bg-color: $success;
+$dark-success-mode-profile-edit-button-opacity: 1;
+$dark-success-mode-profile-create-post-text-color: $success;
+
+// ========================> Gold property <========================
+$dark-gold-mode-profile-navbar-bg-color: $gold-light;
+$dark-gold-mode-profile-header-bg-color: $gold-darker;
+$dark-gold-mode-profile-content-bg-color: $gold;
+$dark-gold-mode-profile-edit-button-bg-color: $gold-dark;
+$dark-gold-mode-profile-button-hover-bg-color: $gold;
+$dark-gold-mode-profile-edit-button-opacity: 1;
+$dark-gold-mode-profile-create-post-text-color: $gold;
+
+// ========================> Secondary property <========================
+$dark-secondary-mode-profile-navbar-bg-color: $gold-light;
+$dark-secondary-mode-profile-header-bg-color: $gold-darker;
+$dark-secondary-mode-profile-content-bg-color: $gold;
+$dark-secondary-mode-profile-edit-button-bg-color: $gold;
+$dark-secondary-mode-profile-button-hover-bg-color: $gold;
+$dark-secondary-mode-profile-edit-button-opacity: 0.7;
+$dark-secondary-mode-profile-create-post-text-color: $gold;
+
+// ========================> warning property <========================
+$warning-mode-profile-body-color: $warning;
+
+// ========================> Info property <========================
+$info-mode-profile-body-color: $info;
+
+// ========================> Grey property <========================
+$dark-grey-mode-profile-navbar-bg-color: $grey-400;
+$dark-grey-mode-profile-header-bg-color: $grey-1000;
+$dark-grey-mode-profile-content-bg-color: $grey-500;
+$dark-grey-mode-profile-edit-button-bg-color: $grey-800;
+$dark-grey-mode-profile-button-hover-bg-color: $grey-600;
+$dark-grey-mode-profile-edit-button-opacity: 1;
+$dark-grey-mode-profile-create-post-text-color: $grey-500;
+
+// =========================================================
+// =========================================================
+// =========================================================
+// LIGHT PROPERTIES
+// =========================================================
+// =========================================================
+// =========================================================
+
+$light-mode-add-block-element: $grey-100;
+
+// ========================> Pink property <========================
+$light-pink-mode-profile-navbar-bg-color: $secondary-dark;
+$light-pink-mode-profile-header-bg-color: $primary-lighter;
+$light-pink-mode-profile-content-bg-color: $primary;
+$light-pink-mode-profile-edit-button-bg-color: $primary;
+$light-pink-mode-profile-button-hover-bg-color: $primary;
+$light-pink-mode-profile-edit-button-opacity: 0.7;
+$light-pink-mode-profile-create-post-text-color: $primary;
+
+// ========================> Success property <========================
+$light-success-mode-profile-navbar-bg-color: $success-dark;
+$light-success-mode-profile-header-bg-color: $success-lighter;
+$light-success-mode-profile-content-bg-color: $success;
+$light-success-mode-profile-edit-button-bg-color: $success;
+$light-success-mode-profile-button-hover-bg-color: $success;
+$light-success-mode-profile-edit-button-opacity: 0.7;
+$light-success-mode-profile-create-post-text-color: $success;
+
+// ========================> Gold property <========================
+$light-gold-mode-profile-navbar-bg-color: $gold-dark;
+$light-gold-mode-profile-header-bg-color: $gold-lighter;
+$light-gold-mode-profile-content-bg-color: $gold;
+$light-gold-mode-profile-edit-button-bg-color: $gold;
+$light-gold-mode-profile-button-hover-bg-color: $gold;
+$light-gold-mode-profile-edit-button-opacity: 0.7;
+$light-gold-mode-profile-create-post-text-color: $gold;
+
+// ========================> Secondary property <========================
+$light-secondary-mode-profile-navbar-bg-color: $gold-dark;
+$light-secondary-mode-profile-header-bg-color: $gold-lighter;
+$light-secondary-mode-profile-content-bg-color: $gold;
+$light-secondary-mode-profile-edit-button-bg-color: $gold;
+$light-secondary-mode-profile-button-hover-bg-color: $gold;
+$light-secondary-mode-profile-edit-button-opacity: 0.7;
+$light-secondary-mode-profile-create-post-text-color: $gold;
+
+// ========================> warning property <========================
+$warning-mode-profile-body-color: $warning;
+
+// ========================> Info property <========================
+$info-mode-profile-body-color: $info;
+
+// ========================> Grey property <========================
+$light-grey-mode-profile-navbar-bg-color: $grey-700;
+$light-grey-mode-profile-header-bg-color: $grey-100;
+$light-grey-mode-profile-content-bg-color: $grey-500;
+$light-grey-mode-profile-edit-button-bg-color: $grey-600;
+$light-grey-mode-profile-button-hover-bg-color: $grey-800;
+$light-grey-mode-profile-edit-button-opacity: 0.7;
+$light-grey-mode-profile-create-post-text-color: $grey-1000;
+
+// =========================================================
+// =========================================================
+// =========================================================
+// MERGE
+// =========================================================
+// =========================================================
+// =========================================================
+
+html[data-theme="dark"] {
+  --add-block-element: #{$dark-mode-add-block-element};
+
+  body[data-profile-theme="pink"] {
+    --profile-navbar-bg-color: #{$dark-pink-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$dark-pink-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$dark-pink-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$dark-pink-mode-profile-edit-button-bg-color};
+    --profile-button-hover-bg-color: #{$dark-pink-mode-profile-button-hover-bg-color};
+    --profile-edit-button-opacity: #{$dark-pink-mode-profile-edit-button-opacity};
+    --profile-create-post-text-color: #{$dark-pink-mode-profile-create-post-text-color};
+  }
+
+  body[data-profile-theme="success"] {
+    --profile-navbar-bg-color: #{$dark-success-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$dark-success-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$dark-success-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$dark-success-mode-profile-edit-button-bg-color};
+    --profile-edit-button-opacity: #{$dark-success-mode-profile-edit-button-opacity};
+    --profile-button-hover-bg-color: #{$dark-success-mode-profile-button-hover-bg-color};
+    --profile-create-post-text-color: #{$dark-success-mode-profile-create-post-text-color};
+  }
+
+  body[data-profile-theme="gold"] {
+    --profile-navbar-bg-color: #{$dark-gold-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$dark-gold-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$dark-gold-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$dark-gold-mode-profile-edit-button-bg-color};
+    --profile-edit-button-opacity: #{$dark-gold-mode-profile-edit-button-opacity};
+    --profile-button-hover-bg-color: #{$dark-gold-mode-profile-button-hover-bg-color};
+    --profile-create-post-text-color: #{$dark-gold-mode-profile-create-post-text-color};
+  }
+
+  body[data-profile-theme="secondary"] {
+    --profile-navbar-bg-color: #{$dark-secondary-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$dark-secondary-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$dark-secondary-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$dark-secondary-mode-profile-edit-button-bg-color};
+    --profile-edit-button-opacity: #{$dark-secondary-mode-profile-edit-button-opacity};
+    --profile-button-hover-bg-color: #{$dark-secondary-mode-profile-button-hover-bg-color};
+    --profile-create-post-text-color: #{$dark-secondary-mode-profile-create-post-text-color};
+  }
+
+  body[data-profile-theme="warning"] {
+    --body-color2: #{$warning-mode-profile-body-color};
+  }
+
+  body[data-profile-theme="info"] {
+    --body-color2: #{$info-mode-profile-body-color};
+  }
+
+  body[data-profile-theme="grey"] {
+    --profile-navbar-bg-color: #{$dark-grey-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$dark-grey-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$dark-grey-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$dark-grey-mode-profile-edit-button-bg-color};
+    --profile-edit-button-opacity: #{$dark-grey-mode-profile-edit-button-opacity};
+    --profile-button-hover-bg-color: #{$dark-grey-mode-profile-button-hover-bg-color};
+    --profile-create-post-text-color: #{$dark-grey-mode-profile-create-post-text-color};
+  }
+}
+
+html[data-theme="light"] {
+  --add-block-element: #{$light-mode-add-block-element};
+
+  body[data-profile-theme="pink"] {
+    --profile-navbar-bg-color: #{$light-pink-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$light-pink-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$light-pink-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$light-pink-mode-profile-edit-button-bg-color};
+    --profile-edit-button-opacity: #{$light-pink-mode-profile-edit-button-opacity};
+    --profile-button-hover-bg-color: #{$light-pink-mode-profile-button-hover-bg-color};
+    --profile-create-post-text-color: #{$light-pink-mode-profile-create-post-text-color};
+  }
+
+  body[data-profile-theme="success"] {
+    --profile-navbar-bg-color: #{$light-success-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$light-success-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$light-success-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$light-success-mode-profile-edit-button-bg-color};
+    --profile-edit-button-opacity: #{$light-success-mode-profile-edit-button-opacity};
+    --profile-button-hover-bg-color: #{$light-success-mode-profile-button-hover-bg-color};
+    --profile-create-post-text-color: #{$light-success-mode-profile-create-post-text-color};
+  }
+
+  body[data-profile-theme="gold"] {
+    --profile-navbar-bg-color: #{$light-gold-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$light-gold-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$light-gold-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$light-gold-mode-profile-edit-button-bg-color};
+    --profile-edit-button-opacity: #{$light-gold-mode-profile-edit-button-opacity};
+    --profile-button-hover-bg-color: #{$light-gold-mode-profile-button-hover-bg-color};
+    --profile-create-post-text-color: #{$light-gold-mode-profile-create-post-text-color};
+  }
+
+  body[data-profile-theme="secondary"] {
+    --profile-navbar-bg-color: #{$light-secondary-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$light-secondary-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$light-secondary-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$light-secondary-mode-profile-edit-button-bg-color};
+    --profile-edit-button-opacity: #{$light-secondary-mode-profile-edit-button-opacity};
+    --profile-button-hover-bg-color: #{$light-secondary-mode-profile-button-hover-bg-color};
+    --profile-create-post-text-color: #{$light-secondary-mode-profile-create-post-text-color};
+  }
+
+  body[data-profile-theme="warning"] {
+    --body-color2: #{$warning-mode-profile-body-color};
+  }
+
+  body[data-profile-theme="info"] {
+    --body-color2: #{$info-mode-profile-body-color};
+  }
+
+  body[data-profile-theme="grey"] {
+    --profile-navbar-bg-color: #{$light-grey-mode-profile-navbar-bg-color};
+    --profile-header-bg-color: #{$light-grey-mode-profile-header-bg-color};
+    --profile-content-bg-color: #{$light-grey-mode-profile-content-bg-color};
+    --profile-edit-button-bg-color: #{$light-grey-mode-profile-edit-button-bg-color};
+    --profile-edit-button-opacity: #{$light-grey-mode-profile-edit-button-opacity};
+    --profile-button-hover-bg-color: #{$light-grey-mode-profile-button-hover-bg-color};
+    --profile-create-post-text-color: #{$light-grey-mode-profile-create-post-text-color};
+  }
+}

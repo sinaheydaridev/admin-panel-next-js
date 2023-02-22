@@ -1,0 +1,16 @@
+.sidebar {
+  max-height: 100vh;
+  height: 100%;
+  @include maxWidth(lg) {
+    .d-flex {
+      justify-content: center !important;
+    }
+    .label {
+      display: none !important;
+    }
+  }
+}
+
+.main-nav {
+  height: calc(100vh - 150px);
+}

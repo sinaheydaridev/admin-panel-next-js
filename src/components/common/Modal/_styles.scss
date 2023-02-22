@@ -1,0 +1,78 @@
+.custom-modal {
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+  width: 100%;
+  right: 0;
+  @include maxWidth(sm) {
+    bottom: 0;
+    height: 100%;
+    top: 0px !important;
+  }
+  .main-card {
+    width: 100%;
+    @include maxWidth(sm) {
+      height: 100%;
+    }
+  }
+  .wrapper {
+    width: 490px;
+    border-radius: 14px;
+    overflow: hidden;
+    @include maxWidth(md) {
+      height: 90%;
+      width: 80%;
+    }
+    @include maxWidth(sm) {
+      height: 100%;
+      width: 100%;
+      border-radius: 0;
+      top: 0px;
+    }
+    .header {
+      height: 60px;
+    }
+    .content {
+      max-height: 320px;
+      height: 80%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      @include maxWidth(md) {
+        max-height: 90%;
+      }
+      @include maxWidth(sm) {
+        max-height: 100%;
+      }
+    }
+    .footer {
+      height: 75px;
+    }
+    .close {
+      height: 33px;
+      width: 33px;
+    }
+    .save {
+      height: 35px;
+      width: 70px;
+    }
+  }
+
+  .open {
+    opacity: 1;
+  }
+  .close {
+    opacity: 0;
+  }
+}
+
+.custom-modal.open {
+  opacity: 1 !important;
+  visibility: visible;
+  @include transition(all, 200ms);
+}
+
+.custom-modal.close {
+  opacity: 0;
+  visibility: hidden;
+  @include transition(all, 200ms);
+}

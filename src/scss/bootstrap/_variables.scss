@@ -1,0 +1,53 @@
+$grid-gutter-width: 30px !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  xss: 476px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+$container-max-widths: (
+  xs: 440px,
+  sm: 540px,
+  md: 720px,
+  lg: 1100px,
+  xl: 1280px,
+  xxl: 1420px,
+) !default;
+
+$theme-colors: (
+  "primary": #d9276b,
+  "primary-dark": #ca1259,
+  "gold": #dfac00,
+  "dark": #fff,
+  "dark-light": #333333,
+  "danger": #ec0000,
+  "light": #ffffff,
+  "warning": #ff9800,
+  "warning-dark": #ed6c02,
+  "info": #0099dd,
+  "info-main": #1465df,
+  "secondary-light": #e8f4ff,
+  "secondary-main": #57738d,
+  "secondary-dark": #57738d,
+  "success": #0ab364,
+  "grey-100": #f4f5f6,
+  "grey-200": #ebeced,
+  "grey-300": #dee0e2,
+  "grey-400": #d2d4d7,
+  "grey-500": #b3b5b7,
+  "grey-600": #939597,
+  "grey-700": #737577,
+  "grey-800": #535557,
+  "grey-900": #333537,
+  "grey-1000": #212325,
+  "grey-100-light": #3a3a3a0e,
+  "grey": #dddddd,
+);
+
+$grid-columns: 12; // customize space between .col classes
+$grid-gutter-width: 13px;

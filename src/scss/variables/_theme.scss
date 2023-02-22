@@ -1,0 +1,163 @@
+@import "./palette";
+
+// ========================> Light property <========================
+
+// ====== Body ======
+$body-bg-color: $light;
+$body-text-color: $dark;
+// ====== Button ======
+$dark-button-bg-color: $dark;
+$dark-button-text-color: $light;
+$grey-button-bg-color: $grey-200;
+$grey-button-hover-bg-color: $grey-700;
+$grey-button-text-color: $grey-800;
+$grey-button-hover-text-color: $light;
+// ====== Text ======
+$text-grey-color: $grey-600;
+// ====== Skeleton ======
+$skeleton-bg-color: $grey-300;
+$skeleton-animation-bg-color: $grey-100;
+// ====== Card ======
+$grey-card-bg-color: $grey-200;
+$white-card-bg-color: $light;
+$success-card-bg-color: $success-main;
+$success-card-text-color: $success-main-dark;
+// ====== Touch ======
+$touch-bg-color: $grey-100-light;
+// ====== Border ======
+$border-grey-color: $grey-300;
+// ====== Tabs ======
+$tabs-card-bg-color: $grey-300;
+$tab-card-select-bg-color: $grey-100;
+// ====== TextField ======
+$text-field-bg-color: $light;
+$text-field-placeholder-color: $grey-500;
+$text-field-border-color: $grey-300;
+// ====== Switch ======
+$switch-bg-color: $grey-300;
+// ====== Account Avatar ======
+$account-avatar-icon-bg-color: $light;
+// ====== Switch theme ======
+$active-switch-theme-bg-color: $light;
+
+// ========================> Dark property <========================
+
+// ====== Body ======
+$dark-mode-body-background-color: $dark;
+$dark-mode-body-text-color: $light;
+// ===== Button ======
+$dark-mode-dark-button-bg-color: $grey-100;
+$dark-mode-dark-button-text-color: $dark;
+$dark-mode-grey-button-bg-color: $grey-900;
+$dark-mode-grey-button-hover-bg-color: $grey-300;
+$dark-mode-grey-button-text-color: $light;
+$dark-mode-grey-button-hover-text-color: $dark;
+// ===== Text ======
+$dark-mode-text-grey-color: $grey-400;
+// ====== Skeleton ======
+$dark-mode-skeleton-bg-color: $grey-900;
+$dark-mode-skeleton-animation-bg-color: $dark;
+// ====== Card ======
+$dark-mode-grey-card-bg-color: $grey-900;
+$dark-mode-white-card-bg-color: $grey-900;
+$dark-mode-success-card-bg-color: $success-main;
+$dark-mode-success-card-text-color: $success-main-dark;
+// ====== Touch ======
+$dark-mode-touch-bg-color: $grey-1000;
+// ====== Border ======
+$dark-mode-border-grey-color: $grey-800;
+// ====== Tabs ======
+$dark-mode-tabs-card-bg-color: $grey-700;
+$dark-mode-tab-card-select-bg-color: $grey-900;
+// ====== TextField ======
+$dark-mode-text-field-bg-color: transparent;
+$dark-mode-text-field-placeholder-color: $grey-700;
+$dark-mode-text-field-border-color: $grey-700;
+// ====== Switch ======
+$dark-mode-switch-bg-color: $grey-700;
+// ====== Account avatar ======
+$dark-mode-account-avatar-icon-bg-color: $dark;
+// ====== Switch theme ======
+$dark-mode-active-switch-theme-bg-color: $dark;
+
+
+html {
+  --primary: #{$primary};
+  --primary-main: #{$primary-main};
+  --primary-light: #{$primary-light};
+  --dark: #{$dark};
+  --dark-light: #{$dark-light};
+  --danger: #{$danger};
+  --light: #{$light};
+  --warning: #{$warning};
+  --warning-main: #{$warning-main};
+  --secondary: #{$secondary};
+  --info: #{$info};
+  --info-main: #{$info-main};
+  --grey-100: #{$grey-100};
+  --grey-200: #{$grey-200};
+  --grey-300: #{$grey-300};
+  --grey-400: #{$grey-400};
+  --grey-500: #{$grey-500};
+  --grey-600: #{$grey-600};
+  --grey-700: #{$grey-700};
+  --grey-800: #{$grey-800};
+  --grey-900: #{$grey-900};
+  --grey-1000: #{$grey-1000};
+  --grey-100-light: #{$grey-100-light};
+  --grey-main: #{$grey-main};
+
+  --body-bg-color: #{$body-bg-color};
+  --body-text-color: #{$body-text-color};
+  --dark-button-bg-color: #{$dark-button-bg-color};
+  --dark-button-text-color: #{$dark-button-text-color};
+  --grey-button-bg-color: #{$grey-button-bg-color};
+  --grey-button-hover-bg-color: #{$grey-button-hover-bg-color};
+  --grey-button-text-color: #{$grey-button-text-color};
+  --grey-button-hover-text-color: #{$grey-button-hover-text-color};
+  --text-grey: #{$text-grey-color};
+  --skeleton-bg-color: #{$skeleton-bg-color};
+  --skeleton-animation-bg-color: #{$skeleton-animation-bg-color};
+  --grey-card-bg-color: #{$grey-card-bg-color};
+  --white-card-bg-color: #{$white-card-bg-color};
+  --success-card-bg-color: #{$success-card-bg-color};
+  --success-card-text-color: #{$success-card-text-color};
+  --touch-bg-color: #{$touch-bg-color};
+  --border-grey-color: #{$border-grey-color};
+  --tabs-card-bg-color: #{$tabs-card-bg-color};
+  --tab-card-select-bg-color: #{$tab-card-select-bg-color};
+  --text-field-bg-color: #{$text-field-bg-color};
+  --text-field-placeholder-color: #{$text-field-placeholder-color};
+  --text-field-border-color: #{$text-field-border-color};
+  --switch-bg-color: #{$switch-bg-color};
+  --account-avatar-icon-bg-color: #{$account-avatar-icon-bg-color};
+  --active-switch-theme-bg-color: #{$active-switch-theme-bg-color};
+}
+
+html[data-theme="dark"] {
+  --body-bg-color: #{$dark-mode-body-background-color};
+  --body-text-color: #{$dark-mode-body-text-color};
+  --dark-button-bg-color: #{$dark-mode-dark-button-bg-color};
+  --dark-button-text-color: #{$dark-mode-dark-button-text-color};
+  --grey-button-bg-color: #{$dark-mode-grey-button-bg-color};
+  --grey-button-hover-bg-color: #{$dark-mode-grey-button-hover-bg-color};
+  --grey-button-text-color: #{$dark-mode-grey-button-text-color};
+  --grey-button-hover-text-color: #{$dark-mode-grey-button-hover-text-color};
+  --text-grey: #{$dark-mode-text-grey-color};
+  --skeleton-bg-color: #{$dark-mode-skeleton-bg-color};
+  --skeleton-animation-bg-color: #{$dark-mode-skeleton-animation-bg-color};
+  --grey-card-bg-color: #{$dark-mode-grey-card-bg-color};
+  --white-card-bg-color: #{$dark-mode-white-card-bg-color};
+  --success-card-bg-color: #{$dark-mode-success-card-bg-color};
+  --success-card-text-color: #{$dark-mode-success-card-text-color};
+  --touch-bg-color: #{$dark-mode-touch-bg-color};
+  --border-grey-color: #{$dark-mode-border-grey-color};
+  --tabs-card-bg-color: #{$dark-mode-tabs-card-bg-color};
+  --tab-card-select-bg-color: #{$dark-mode-tab-card-select-bg-color};
+  --text-field-bg-color: #{$dark-mode-text-field-bg-color};
+  --text-field-placeholder-color: #{$dark-mode-text-field-placeholder-color};
+  --text-field-border-color: #{$dark-mode-text-field-border-color};
+  --switch-bg-color: #{$dark-mode-switch-bg-color};
+  --account-avatar-icon-bg-color: #{$dark-mode-account-avatar-icon-bg-color};
+  --active-switch-theme-bg-color: #{$dark-mode-active-switch-theme-bg-color};
+}

@@ -1,0 +1,29 @@
+.text-field-wrapper {
+  position: relative;
+  .text-field {
+    border: 1px solid var(--text-field-border-color);
+    background-color: var(--text-field-bg-color);
+    border-radius: 5px;
+    padding: 5px;
+    min-height: 2.4rem;
+    &::placeholder {
+      color: var(--text-field-placeholder-color);
+    }
+    &:focus {
+      border: 1px solid var(--grey-500);
+      @include transition(border, 200ms);
+    }
+    @include transition(border, 200ms);
+  }
+
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 4px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 1rem;
+    left: 5px;
+    transform: translateY(-50%);
+  }
+}

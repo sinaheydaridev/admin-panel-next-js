@@ -1,0 +1,39 @@
+.primary-tab {
+  .header {
+    list-style: none;
+  }
+  ul,
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+  .react-tabs__tab--selected {
+    border-bottom: 3px solid var(--primary);
+    color: var(--primary);
+    @include transition(color, 200ms);
+  }
+}
+
+.card-tab {
+  .card-tab-header {
+    list-style: none;
+    background-color: var(--tabs-card-bg-color);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px;
+    li {
+      padding: 7px;
+      border-radius: 5px;
+    }
+  }
+  ul,
+  ol {
+    padding: 0;
+    margin: 0;
+  }
+  .react-tabs__tab--selected {
+    background-color: var(--tab-card-select-bg-color);
+    border: none;
+    @include transition(all, 200ms);
+  }
+}

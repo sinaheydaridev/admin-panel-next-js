@@ -1,0 +1,16 @@
+.horizontal-draggable-card {
+  cursor: grab;
+  padding: "1.5em";
+  margin: "0.5em 0em";
+  list-style: "none";
+  border: "2px solid #CCC";
+  box-shadow: "3px 3px #AAA";
+  color: "#333";
+  border-radius: "5px";
+  z-index: 100;
+  height: 4rem;
+}
+
+.horizontal-draggable-card.selected {
+  background-color: var(--profile-button-hover-bg-color);
+}

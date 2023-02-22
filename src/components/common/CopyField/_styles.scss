@@ -1,0 +1,11 @@
+.copy-field {
+  border: 1px solid var(--text-field-border-color);
+  border-radius: 7px;
+  height: 2.4rem;
+  .copy-field-icon {
+    @include transition(all, 150ms);
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}

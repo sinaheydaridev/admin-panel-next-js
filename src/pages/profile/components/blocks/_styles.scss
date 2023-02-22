@@ -1,0 +1,21 @@
+.email-block-content {
+  background-color: var(--profile-edit-button-bg-color);
+  color: var(--light);
+  border-radius: 7px;
+}
+
+.link-block-item {
+  &:hover {
+    background-color: var(--profile-button-hover-bg-color);
+    color: var(--light);
+  }
+  @include transition(all, 150ms);
+}
+
+.post-block-item {
+  border-radius: 7px;
+  &:hover {
+    background-color: var(--profile-header-bg-color);
+  }
+  @include transition(all, 150ms);
+}

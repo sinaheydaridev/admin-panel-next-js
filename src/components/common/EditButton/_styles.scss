@@ -1,0 +1,42 @@
+.edit-button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  height: 2rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  @include transition(all, 150ms);
+}
+
+.edit-button.pink {
+  background-color: var(--profile-edit-button-bg-color);
+  color: var(--light);
+  opacity: var(--profile-edit-button-opacity);
+  &:hover{
+    opacity: 1;
+    background-color: var(--profile-button-hover-bg-color);
+  }
+}
+
+.edit-button.warning {
+  background-color: var(--profile-edit-button-bg-color);
+}
+
+.edit-button.gold {
+  background-color: var(--profile-edit-button-bg-color);
+}
+
+.edit-button.success {
+  background-color: var(--profile-edit-button-bg-color);
+}
+
+.edit-button.secondary {
+  background-color: var(--profile-edit-button-bg-color);
+}
+
+.edit-button.grey {
+  background-color: var(--profile-edit-button-bg-color);
+}

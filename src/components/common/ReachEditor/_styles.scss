@@ -1,0 +1,90 @@
+.sun-editor {
+  font-family: $font-family !important;
+  font-size: 1.2rem;
+  border-radius: 5px;
+
+  .se-toolbar,
+  .se-submenu {
+    padding: 5px;
+    border-color: transparent !important;
+    outline: transparent !important;
+    background-color: var(--white-card-bg-color) !important;
+    box-shadow: 1px 1px 5px var(--grey-400) !important;
+  }
+
+  .se-arrow,
+  .se-arrow-up {
+    display: none !important;
+  }
+
+  .default_value {
+    background-color: transparent !important;
+  }
+
+  .se-btn-module {
+    margin-right: 5px;
+  }
+
+  .se-btn-tool-size span {
+    margin-left: 5px !important;
+  }
+}
+
+[data-theme="dark"] .sun-editor {
+  background-color: var(--grey-900) !important;
+  border: 1px solid var(--grey-700) !important;
+
+  button {
+    color: var(--light) !important;
+  }
+
+  .se-btn-primary, ._se_tab_link {
+    background-color: var(--grey-900) !important;
+    &:hover {
+      background-color: var(--grey-600) !important;
+    }
+  }
+
+  .se-btn-module {
+    border: 1px solid var(--grey-700) !important;
+    outline: none !important;
+    margin-right: 5px;
+    background-color: transparent !important;
+  }
+  .se-btn-list.active {
+    background-color: var(--grey-700) !important;
+    border-color: var(--grey-700) !important;
+  }
+  .se-btn-select {
+    background-color: transparent !important;
+  }
+  .se-wrapper-inner {
+    background-color: var(--grey-900) !important;
+    color: var(--text-grey) !important;
+  }
+  .se-toolbar,
+  .se-submenu {
+    padding: 5px;
+    border-color: transparent !important;
+    outline: transparent !important;
+    box-shadow: none !important;
+    background-color: var(--grey-800) !important;
+  }
+
+  .se-dialog-content {
+    background-color: var(--grey-900) !important;
+  }
+
+  div,
+  label,
+  span,
+  input,
+  select {
+    color: var(--text-grey) !important;
+    border-color: var(--grey-700) !important;
+  }
+
+  .se-btn-select {
+    background-color: var(--grey-900) !important;
+  }
+}

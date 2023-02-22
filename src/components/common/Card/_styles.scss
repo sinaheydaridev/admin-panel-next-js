@@ -1,0 +1,18 @@
+.main-card {
+  border-radius: 7px;
+}
+
+.main-card__white {
+  background-color: var(--white-card-bg-color);
+  box-shadow: 1px 1px 10px var(--grey-400);
+}
+
+[data-theme="dark"] .main-card__white {
+  background-color: var(--white-card-bg-color);
+  box-shadow: none;
+  border: 2px solid var(--grey-800);
+}
+
+.main-card__grey {
+  background-color: var(--grey-card-bg-color);
+}

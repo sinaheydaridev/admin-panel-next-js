@@ -1,0 +1,12 @@
+.touch {
+  cursor: pointer;
+  &:hover {
+    background-color: var(--touch-bg-color);
+    @include transition(all, 150ms);
+  }
+  &:active {
+    background-color: var(--touch-bg-color);
+    @include transition(all, 150ms);
+  }
+  @include transition(all, 150ms);
+}

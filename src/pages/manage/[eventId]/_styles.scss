@@ -1,0 +1,15 @@
+.guest-host-creator {
+  background-color: var(--success-card-bg-color);
+  color: var(--success-card-text-color);
+  border-radius: 2rem;
+}
+
+.add-guest-list {
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

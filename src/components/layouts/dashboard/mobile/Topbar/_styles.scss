@@ -1,0 +1,22 @@
+.mobile-top-bar {
+  height: 0px;
+  overflow: hidden;
+  z-index: 10;
+  height: 0px;
+  visibility: hidden;
+  @include transition(all, 250ms);
+}
+
+.mobile-top-bar.open {
+  visibility: visible;
+  height: 100%;
+  @include transition(all, 250ms);
+}
+
+.mobile-main-nav {
+  height: calc(100vh - 180px);
+}
+
+.account-avatar-icon {
+  background-color: var(--account-avatar-icon-bg-color);
+}

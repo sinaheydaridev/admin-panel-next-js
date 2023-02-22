@@ -1,0 +1,74 @@
+$font-family: Yekan sans-serif;
+
+@font-face {
+  font-family: $font-family;
+  src: url("../../public/assets/fonts/Yekan.eot") format("eot");
+  src: url("../../public/assets/fonts/Yekan.otf") format("otf");
+  src: url("../../public/assets/fonts/Yekan.ttf") format("ttf");
+  src: url("../../public/assets/fonts/Yekan.woff") format("woff");
+  src: url("../../public/assets/fonts/Yekan.woff2") format("woff2");
+}
+
+body {
+  font-family: $font-family;
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
+  direction: rtl;
+}
+
+a {
+  text-decoration: none !important;
+  color: currentColor;
+
+  &:hover {
+    color: currentColor;
+  }
+}
+
+:focus-visible {
+  outline: 0px !important;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  outline: none;
+  background-color: transparent;
+}
+
+svg {
+  fill: currentColor !important;
+  color: currentColor !important;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--grey-900);
+  width: 16px;
+  height: 16px;
+}
+
+.main.container {
+  @include maxWidth(xxl) {
+    padding: 0px !important;
+    margin: 0px !important;
+    max-width: 100%;
+  }
+}
+
+.manage-pages-wrapper {
+  width: 70%;
+  @include maxWidth(md) {
+    width: 100%;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}

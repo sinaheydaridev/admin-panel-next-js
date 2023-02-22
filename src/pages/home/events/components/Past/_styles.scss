@@ -1,0 +1,21 @@
+.past-event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include maxWidth(sm) {
+    flex-direction: column;
+  }
+
+  .event-image {
+    overflow: hidden;
+    width: 120px;
+    height: 80px;
+  }
+
+  .past-event-manage-btn {
+    @include maxWidth(sm) {
+      width: 100% !important;
+      margin-top: 20px;
+    }
+  }
+}

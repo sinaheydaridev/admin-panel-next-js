@@ -1,0 +1,28 @@
+.event-input {
+  &::placeholder {
+    font-size: 2rem;
+    color: var(--grey-300);
+  }
+  font-size: 2rem;
+  width: 80%;
+  border: none;
+  height: 3rem;
+}
+
+.create-event-tab-card {
+  width: 80%;
+  @include maxWidth(sm) {
+    width: 100% !important;
+  }
+}
+
+.create-event-text-field {
+  width: 50%;
+  @include maxWidth(xss) {
+    width: 100%;
+  }
+}
+
+.create-event-zoom-button {
+  height: 40px;
+}
