@@ -1,7 +1,6 @@
-### admin panel with next js
+## admin panel with next js
 
 
-![Logo](https://s29.picofile.com/file/8464841692/2023_06_20_10_25_55_Window.png)
 ![Logo](https://s29.picofile.com/file/8464841692/2023_06_20_10_25_55_Window.png)
 ![Logo](https://s29.picofile.com/file/8464841968/2023_06_20_10_32_00_Window.png)
 ![Logo](https://s28.picofile.com/file/8464842234/2023_06_20_10_35_17_Window.png)
